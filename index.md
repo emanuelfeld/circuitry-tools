@@ -2,11 +2,17 @@
 <script src="js/circuitry.js"></script>
 <link rel="stylesheet" href="css/index.css">
 
-## Equivalent Resistance Calculator
+## Equivalent Circuit Calculator
 
-Diagram the parallel/series\* circuit of resistors below as a comma-separated list of numbers and arrays. Numbers (integer or decimal) represent resistance values. Using nested arrays, you can indicate parallel branches. 
+Diagram the parallel/series\* circuit of resistors or capacitors below as a comma-separated list of numbers and arrays. Numbers (integer or decimal) represent resistance or capacitance values. Using nested arrays, you can indicate parallel branches. 
+
+<form>
+    <input type="radio" checked="checked" name="component" value="resistor">Resistor circuit<br>
+    <input type="radio" name="component" value="capacitor">Capacitor circuit
+</form>
 
 <textarea id="circuit"></textarea>
+
 <button type="button" value="calculate" id="calculate">Calculate</button>
 
 <p id="solution"></p>

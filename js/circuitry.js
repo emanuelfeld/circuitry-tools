@@ -26,16 +26,26 @@ function isValidCircuit(c) {
 }
 
 
-function equivalentResistance(c) {
+function equivalentCircuit(c, component) {
+    var parallel = false;
+    var series = false;
+
     if (c.constructor == Number | Number(c)) {
         return Number(c);
     } else if (c.constructor == Array && c.every(isArray)) {
-        return 1 / c.map(function(elem) {
-            return 1 / equivalentResistance(elem);
+        parallel = true;
+    } else {
+        series = true;
+    }
+    
+    
+    if (series && component == 'resistor' || parallel && component == 'capacitor') {
+        return c.map(function(elem) {
+            return equivalentCircuit(elem, component);
         }).reduce(adder, 0);
     } else {
-        return c.map(function(elem) {
-            return equivalentResistance(elem);
-        }).reduce(adder, 0);
+        return 1 / c.map(function(elem) {
+            return 1 / equivalentCircuit(elem, component);
+        }).reduce(adder, 0);        
     }
 }
