@@ -46,7 +46,7 @@ Diagram the parallel/series\* circuit of resistors or capacitors below as a comm
                     [6]
                 ]
             ], 
-            [1], 
+            [1.5], 
             [3]
         ]
 
