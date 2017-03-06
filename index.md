@@ -1,3 +1,4 @@
+<script src="js/analytics.js"></script>
 <script src="js/circuitry.js"></script>
 <link rel="stylesheet" href="css/index.css">
 
