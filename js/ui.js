@@ -18,10 +18,10 @@ function calculateResistance () {
       }
       var unit = (component === 'resistor') ? 'Ω' : 'F'
 
-      document.getElementById('solution').textContent = '<strong>Result</strong> <pre>' + result + ' ' + unit + '</pre>'
+      document.getElementById('solution').innerHTML = '<strong>Result</strong> <pre>' + result + ' ' + unit + '</pre>'
       return
     }
   } catch (e) {}
 
-  document.getElementById('solution').textContent = '<pre>Invalid circuit</pre>'
+  document.getElementById('solution').innerHTML = '<pre>Invalid circuit</pre>'
 }
