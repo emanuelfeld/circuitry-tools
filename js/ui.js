@@ -3,7 +3,8 @@ button.addEventListener('click', calculateResistance)
 
 function calculateResistance () {
   var component = document.querySelector('input[name="component"]:checked').value
-  // try {
+  
+  try {
     var input = document.getElementById('circuit').value
     var circuit = JSON.parse('[' + input + ']')
 
@@ -17,10 +18,10 @@ function calculateResistance () {
       }
       var unit = (component === 'resistor') ? 'Ω' : 'F'
 
-      document.getElementById('solution').textContent = 'Result: ' + result + ' ' + unit
+      document.getElementById('solution').textContent = '<strong>Result</strong> <pre>' + result + ' ' + unit + '</pre>'
       return
     }
-  // } catch (e) {}
+  } catch (e) {}
 
-  // document.getElementById('solution').textContent = 'Invalid circuit'
+  document.getElementById('solution').textContent = '<pre>Invalid circuit</pre>'
 }
