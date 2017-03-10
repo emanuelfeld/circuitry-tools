@@ -7,18 +7,16 @@
 
 Diagram the parallel/series\* circuit of resistors or capacitors below as a comma-separated list of numbers and arrays. Numbers (integer or decimal) represent resistance or capacitance values. Using nested arrays, you can indicate parallel branches. 
 
-**Select a circuit type**
+**What are you calculating?**
 
 <p>
 <form>
-    <input type="radio" checked="checked" name="component" value="resistor">&nbsp;Resistor circuit<br>
-    <input type="radio" name="component" value="capacitor">&nbsp;Capacitor circuit
+    <input type="radio" checked="checked" name="component" value="resistor">&nbsp;Resistance<br>
+    <input type="radio" name="component" value="capacitor">&nbsp;Capacitance
 </form>
 </p>
 
 **Enter the circuit diagram**
-
-See examples below
 
 <textarea id="circuit"></textarea>
 
@@ -32,7 +30,7 @@ See examples below
 
 ### Diagram Examples
 
-Each series/parallel circuit segment image below is followed by the text you would enter in the box above to represent its configuration of resistors or capacitors.
+Each example shows an image of a circuit segment (with resistors or capacitors), followed by the text 'diagram' you would use to represent it in the box above.
 
 <img src="img/circuit1.png">
 
