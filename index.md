@@ -1,4 +1,5 @@
 <script src="js/analytics.js"></script>
+<script src="js/fraction.js"></script>
 <script src="js/circuitry.js"></script>
 <link rel="stylesheet" href="css/index.css">
 
@@ -8,8 +9,8 @@ Diagram the parallel/series\* circuit of resistors or capacitors below as a comm
 
 <p>
 <form>
-    <input type="radio" checked="checked" name="component" value="resistor">Resistor circuit<br>
-    <input type="radio" name="component" value="capacitor">Capacitor circuit
+    <input type="radio" checked="checked" name="component" value="resistor">&nbsp;Resistor circuit<br>
+    <input type="radio" name="component" value="capacitor">&nbsp;Capacitor circuit
 </form>
 </p>
 
